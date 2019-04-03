@@ -9,5 +9,5 @@
 #include "memlayout.h"
 
 int main(void){
-  printf("La cantidad de procesor en ejecucion en la CPU es: %i\n", getprocs());
+  printf(1, "La cantidad de procesor en ejecucion en la CPU es: %i\n", getprocs());
 }
