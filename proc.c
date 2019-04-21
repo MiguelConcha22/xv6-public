@@ -334,7 +334,7 @@ int lottery_Total(void){
 //  - choose a process to run
 //  - swtch to start running that process
 //  - eventually that process transfers control
-//      via swtch back to the scheduler.
+//     via swtch back to the scheduler.
 void
 scheduler(void)
 {
