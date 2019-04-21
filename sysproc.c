@@ -95,10 +95,10 @@ int
 sys_settickets(void){
   int ticket_number;
   if (argint(0, &ticket_number) < 0){
-     proc->tickets = 20;
+     myproc()->tickets = 20;
   }
   else{
-     proc->tickets = ticket_number;
+     myproc()->tickets = ticket_number;
   }
   return 0;
 }
