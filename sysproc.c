@@ -91,7 +91,7 @@ sys_uptime(void)
 }
 
 int*
-sys_getPhysical(void)
+sys_getPhysical(int *direccion)
 {
-  return getPhysical();
+  return getPhysical(direccion);
 }
