@@ -545,6 +545,7 @@ getPhysical(int *direccion)
   else{
       return 0;
   }*/
+  printf(1,"direccion puntero en funcion: %p", direccion);
   if(direccion == 0){
     return direccion;
   }else{
