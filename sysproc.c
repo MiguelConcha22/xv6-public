@@ -93,6 +93,5 @@ sys_uptime(void)
 int*
 sys_getPhysical(int *direccion)
 {
-  printf(1,"direccion puntero en sys: %p", direccion);
   return getPhysical(direccion);
 }
