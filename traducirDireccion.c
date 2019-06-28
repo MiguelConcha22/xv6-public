@@ -5,7 +5,7 @@
 
 int main(void){
   int variable1 = 0;
-  int* fisica = (int*)getPhysical(&variable1);
+  int* fisica = (int*)getPhysical(&variable1);  //pasa la direccion virtual y recibe la fisica
   if(fisica != 0){
     printf(1,"Direccion fisica del proceso actual: %p", fisica);
     exit();
