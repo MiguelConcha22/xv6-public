@@ -89,3 +89,9 @@ sys_uptime(void)
   release(&tickslock);
   return xticks;
 }
+
+int
+SYS_getPhysical(void)
+{
+  return getPhysical();
+}
