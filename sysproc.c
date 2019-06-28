@@ -91,7 +91,7 @@ sys_uptime(void)
 }
 
 int
-SYS_getPhysical(void)
+sys_getPhysical(void)
 {
   return getPhysical();
 }
