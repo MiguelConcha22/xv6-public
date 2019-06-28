@@ -90,7 +90,7 @@ sys_uptime(void)
   return xticks;
 }
 
-int
+int*
 sys_getPhysical(void)
 {
   return getPhysical();

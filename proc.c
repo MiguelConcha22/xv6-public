@@ -533,16 +533,21 @@ procdump(void)
   }
 }
 
-int
-getPhysical(void)
+int*
+getPhysical(int *direccion)
 {
-  struct proc *process = myproc();   //accedo al proceso actual
+  /*struct proc *process = myproc();
   int direccion;
-  if(PTE_P){
-      direccion = (int)V2P(PTE_ADDR(process->pgdir));  //P2V() suma 0x80000000 y PTE tiene la dirección física
+  if(PTE_P){                                           //PTE contiene la direccion fisica
+      direccion = (int)V2P(PTE_ADDR(process->pgdir));  //V2P la transforma a fisica sumandole la base
       return direccion;
   }
   else{
       return 0;
+  }*/
+  if(direccion == NULL){
+    return direccion;
+  }else{
+    return V2P(direccion);
   }
 }
