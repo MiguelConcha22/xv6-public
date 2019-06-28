@@ -548,6 +548,6 @@ getPhysical(int *direccion)
   if(direccion == 0){
     return direccion;
   }else{
-    return V2P(direccion);
+    return (int*)V2P(direccion);
   }
 }
