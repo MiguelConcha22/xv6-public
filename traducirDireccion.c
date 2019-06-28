@@ -4,7 +4,7 @@
 
 
 int main(void){
-    int fisica = getPhysical()
+    int fisica = getPhysical();
     if(fisica == 0){
         printf(1,"La direccion entregada no es válida");
         exit();
