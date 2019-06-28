@@ -534,7 +534,7 @@ procdump(void)
 }
 
 int
-getPhysical()
+getPhysical(void)
 {
   struct proc *process = myproc();   //accedo al proceso actual
   int direccion;
