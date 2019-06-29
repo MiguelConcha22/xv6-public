@@ -536,7 +536,7 @@ procdump(void)
 void
 getPhysical(int *direccion)
 {
-  if(direccion == 0){
+  if(direccion != 0){
     cprintf("Direccion virtual de la variable: %p\n",direccion);
     //cprintf("the physical address is %p",V2P(PTE_ADDR(direccion)));
     cprintf("Direccion fisica de la variable: %p",V2P(direccion));
