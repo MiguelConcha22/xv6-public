@@ -533,7 +533,7 @@ procdump(void)
   }
 }
 
-int*
+void
 getPhysical(int *direccion)
 {
   if(direccion == 0){
