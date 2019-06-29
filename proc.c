@@ -536,21 +536,11 @@ procdump(void)
 int*
 getPhysical(int *direccion)
 {
-  /*struct proc *process = myproc();
-  int direccion;
-  if(PTE_P){                                           //PTE contiene la direccion fisica
-      direccion = (int)V2P(PTE_ADDR(process->pgdir));  //V2P la transforma a fisica sumandole la base
-      return direccion;
-  }
-  else{
-      return 0;
-  }*/
-  cprintf("the virtual address is %p\n",direccion);
-  cprintf("the physical address is %p\n",V2P(PTE_ADDR(direccion)));
-  cprintf("the physical2 address is %p\n",V2P(direccion));
   if(direccion == 0){
-    return direccion;
+    cprintf("Direccion virtual de la variable: %p\n",direccion);
+    //cprintf("the physical address is %p",V2P(PTE_ADDR(direccion)));
+    cprintf("Direccion fisica de la variable: %p",V2P(direccion));
   }else{
-    return (int*)V2P(PTE_ADDR(direccion));
+    cprintf("Direccion no valida");
   }
 }
