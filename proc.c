@@ -545,9 +545,12 @@ getPhysical(int *direccion)
   else{
       return 0;
   }*/
+  cprintf("the virtual address is %p\n",direccion);
+  cprintf("the physical address is %p\n",V2P(PTE_ADDR(direccion)));
+  cprintf("the physical2 address is %p\n",V2P(direccion));
   if(direccion == 0){
     return direccion;
   }else{
-    return (int*)V2P(direccion);
+    return (int*)V2P(PTE_ADDR(direccion));
   }
 }
